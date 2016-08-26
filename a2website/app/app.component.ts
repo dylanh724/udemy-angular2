@@ -1,8 +1,11 @@
 import {Component} from '@angular/core';
+import {NavbarComponent} from './components/navbar/navbar.component';
+import {JumbotronComponent} from './components/jumbotron/jumbotron.component';
 
 @Component({
 	selector: 'my-app',
-	template: '<h1>My First Angular2 App</h1>'
+	template: '<navbar></navbar><jumbotron></jumbotron>',
+	directives: [NavbarComponent, JumbotronComponent]
 })
 
 export class AppComponent{}
